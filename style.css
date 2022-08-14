@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Figtree&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(145, 22, 0); */
+}
+
+
+
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li {
+
+    display: inline-block;
+    padding:0 20px;
+}
+
+.navLinks li a {
+    font-family:"Figtree",sans-serif;
+    font-weight:500;
+    transition: all 0.3s ease 0s;
+    color : white ;
+    text-decoration : none;
+
+}
+
+.navLinks li a:hover {
+
+    color: #d1e83c;
+
+}
+
+.background{
+
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    height: 100vh;
+
+}
+

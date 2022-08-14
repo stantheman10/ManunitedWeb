@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Figtree&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+    /* background-color: rgb(145, 22, 0); */
+}
+
+#navbar{
+
+    background-color:maroon;
+
+}
+.nav{
+    background-color: maroon;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    color: white;
+    background-color: maroon;
+}
+
+
+
+
+.logo {
+    cursor: pointer;
+    background-color: maroon;
+}
+
+.navLinks{
+    list-style: none;
+    background-color: maroon;
+    
+}
+
+.navLinks li {
+
+    display: inline-block;
+    padding:0 20px;
+    background-color: maroon;
+}
+
+.navLinks li a {
+
+    transition: all 0.3s ease 0s;
+    color : rgb(255, 255, 255) ;
+    text-decoration : none;
+    font-family:"Figtree",sans-serif;
+    font-weight:500;
+    background-color: maroon;
+    
+
+}
+
+.navLinks li a:hover {
+
+    color: #d1e83c;
+
+}
+
+
+
+.background{
+
+    background-image: url('newsBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    height: 100vh;
+
+}
+
+#showNews{
+
+    
+   
+   display: flex;
+   flex-wrap: wrap;
+    
+    
+
+}
+
+#newsBtn{
+    background-color: maroon;
+}
+
+h3{
+    background-color: maroon;
+}
+
+.footer{
+    background-color:black;
+    
+}
