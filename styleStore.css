@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Figtree&display=swap');
+
+.background{
+
+    background-color: #009200;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+}
+
+
+.footer{
+
+    background-color: #ffd700;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li {
+
+    display: inline-block;
+    padding:0 20px;
+}
+
+.navLinks li a {
+    font-family:"Figtree",sans-serif;
+    font-weight:500;
+    transition: all 0.3s ease 0s;
+    color : white ;
+    text-decoration : none;
+
+}

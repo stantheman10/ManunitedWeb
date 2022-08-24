@@ -94,11 +94,18 @@ header{
     background-color: maroon;
 }
 
-h3{
+h4{
     background-color: maroon;
 }
 
 .footer{
     background-color:black;
+     position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-left:48%;
+    
     
 }

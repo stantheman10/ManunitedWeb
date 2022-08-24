@@ -1,11 +1,22 @@
 const showNews = document.getElementById('showNews');
-const apiKey="bef1f7fb60eb4bcc8f8483e300c02c81"
-const url = 'https://newsapi.org/v2/everything?' +
-          'q=manchester-united&' +
-          'from=2022-08-14&' +
-          'language=en&'+
-          'sortBy=popularity&' +
-          'apiKey=bef1f7fb60eb4bcc8f8483e300c02c81';
+
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //getting date
+var yyyy = today.getFullYear();
+
+today = yyyy+'-'+mm+'-'+dd;
+
+const apiKey="3e01339c989702b23fc374223c4499bd"  //mediastack
+const url = 'http://api.mediastack.com/v1/news?access_key=' + apiKey +'&categories=sports'+'&languages=en'+'&keywords=manchester-united' + '&date='+today;
+
+
+// const url='http://newsapi.org/v2/top-headlines?' +
+//           'q=manchester-united&' +
+//           'language=en&' +
+//           'sortBy=popularity&' +
+//           'apiKey=bef1f7fb60eb4bcc8f8483e300c02c81';
 
 var newsDataArray = [];
 
@@ -20,7 +31,7 @@ const fetchNews= async () => {
     if (response.status>=200 && response.status<300){
         const myJson= await response.json();
         console.log(myJson);
-        newsDataArray = myJson.articles;
+        newsDataArray = myJson.data;
 
     }
     else{
@@ -45,7 +56,7 @@ function displayNews(){
 
     newsDataArray.forEach(news=>{
 
-        var date=news.publishedAt.split("T");
+        var date=news.published_at.split("T");
 
         var col=document.createElement('div');
         col.className="col-sm-12 col-md-4 col-lg-3 p-2";
@@ -55,7 +66,7 @@ function displayNews(){
         var image = document.createElement('img');
         image.setAttribute("height","matchparnt");
         image.setAttribute("width","100%");   
-        image.src = news.urlToImage;
+        image.src = news.image;
 
         var cardBody = document.createElement('div');
         var newsHeading = document.createElement('h5');
