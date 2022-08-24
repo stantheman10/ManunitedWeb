@@ -21,6 +21,7 @@ header{
 
 .logo {
     cursor: pointer;
+    width: 8%;
 }
 
 .navLinks{
@@ -39,7 +40,7 @@ header{
     transition: all 0.3s ease 0s;
     color : white ;
     text-decoration : none;
-
+    font-size: 110%;
 }
 
 .navLinks li a:hover {
