@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 *{
 
@@ -58,4 +59,38 @@ header{
     height: 100vh;
 
 }
+
+.text{
+
+ color:white;
+ font-weight:500;
+ font-family: "Figtree", sans-serif;
+ font-size: 190%;
+ text-align: center;
+ padding-top: 8%;
+ text-shadow: 2px 2px red;
+ 
+
+}
+
+
+  .text h1 {
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 2s steps(22,end) forwards,
+              blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid rgb(255, 255, 255);
+    }
+  }
 
