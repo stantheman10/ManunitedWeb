@@ -8,9 +8,11 @@ var yyyy = today.getFullYear();
 
 today = yyyy+'-'+mm+'-'+dd;
 
-const apiKey="3e01339c989702b23fc374223c4499bd"  //mediastack
-const url = 'http://api.mediastack.com/v1/news?access_key=' + apiKey +'&categories=sports'+'&languages=en'+'&keywords=manchester-united' + '&date='+today;
+const apiKey="0af9eea9138c10dc5482bb0fe6dddc12"  //mediastack
+//const url = 'http://api.mediastack.com/v1/news?access_key=' + apiKey +'&categories=sports'+'&languages=en' + '&' + today;
 
+const url = 'http://api.mediastack.com/v1/news?access_key='+apiKey+'&categories=sports&languages=en&keywords=manchester-united';
+    
 
 // const url='http://newsapi.org/v2/top-headlines?' +
 //           'q=manchester-united&' +

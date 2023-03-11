@@ -1,32 +1,129 @@
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleStore.css">
-    <title>Store</title>
-</head>
-<body>
-    <div class="background">
-        <header> 
-            <img class="logo" src="manu.png" width="5%">
-            <nav>
-                <ul class="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html" id="newsBtn">News</a></li>
-                    <li><a href="store.html"><h3>Store</h3></a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-       </div>
 
-    <div class="footer"> 
-          <p>Made By Stanric</p>  
-    </div>   
+    <link rel="stylesheet" href="./styleStore.css">
+    <!-- <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  </head>
+  
+  <body>
+    <header>
+      <div class="logo"><a href="#">Manchester United Store</a></div>
+      <div class="menu">
+        <a href="#">
+          <ion-icon name="close" class="close"></ion-icon>
+        </a>
+  
+        <ul>
+          <li><a href="index.html" class="under">HOME</a></li>
+          <li><a href="#" class="under">SHOP</a></li>
+          <li><a href="news.html" class="under">News</a></li>
+          <li><a href="abtus.html" class="under">About Us</a></li>
+          <li><a href="login.html" class="under">Login</a></li>
+        </ul>
+      </div>
+      <div class="search">
+  
+        <a href="#"><input type="text" placeholder="search products" id="input">
+          <ion-icon class="s" name="search"></ion-icon>
+        </a>
+      </div>
+      <div class="heading">
+        <ul>
+            <li><a href="index.html" class="under">HOME</a></li>
+           
+            <li><a href="news.html" class="under">News</a></li>
+            <li><a href="abtus.html" class="under">About Us</a></li>
+            <li><a href="login.html" class="under">Login</a></li>
+        </ul>
+      </div>
+      
+      <div class="heading1">
+        <ion-icon name="menu" class="ham"></ion-icon>
+      </div>
+    </header>
+    <!-- <div id="slideShow">
+      <img class="mySlides" src="https://i.eurosport.com/2023/03/01/3587455-73058268-2560-1440.jpg?" width="1000px" height="500px">
+    <img class="mySlides" src="https://static01.nyt.com/images/2023/02/21/multimedia/21db-newsletter-unitedfc-wghq/21db-newsletter-unitedfc-wghq-jumbo.jpg?quality=75&auto=webp" width="1000px" height="500px">
+    <img class="mySlides" src="https://media.cnn.com/api/v1/images/stellar/prod/230226140336-carabao-cup-final-manchester-united-wins-022623.jpg?c=16x9&q=h_720,w_1280,c_fill" width="1000px" height="500px">
+    <img class="mySlides" src="https://static.teamviewer.com/resources/2022/09/manutd-header.jpg" width="1000px" height="500px">
 
+    </div> -->
+    <div class="itemsDisplay">
+
+
+
+   
+    <div class="container page-wrapper">
+      <div class="page-inner">
+        <div class="row">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="http://code.slicecrowd.com/labs/4/images/t-shirt.png" alt="">
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">I feel like Pablo</span>
+                  <span class="p-company">Yeezy</span>
+                </div>
+                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
+              </div>
+            </div>
     
-</body>
-</html>
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner"></div>
+              </div>
+    
+              <a class="cart" href="#">
+                <span class="price">$120</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container page-wrapper">
+      <div class="page-inner">
+        <div class="row">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="https://zealevince.com/wp-content/uploads/2022/11/Manchester-United-Home-Long-Sleeve-Jersey-22-23-Season-Premium-scaled.jpg" alt="" width="100px">
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Manchester United Home (long)</span>
+                  <span class="p-company">Adidas</span>
+                </div>
+                <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
+              </div>
+            </div>
+    
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner"></div>
+              </div>
+    
+              <a class="cart" href="#">
+                <span class="price">$120</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+   
+    
+   <script src="store.js"></script>
+  
+  </body>
+  
+  </html>
